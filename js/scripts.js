@@ -36,7 +36,8 @@ $(document).ready(function(){
 
 
 
-    $('#charge').click(function(){
+    $('#charge').click(function(event){
+        event.preventDefault();
         var newSize = $("input[type=radio][name=size]:checked").val();
         if (newSize==="small"){
             var newQuantity = parseInt($('#qs').val());
@@ -53,6 +54,12 @@ $(document).ready(function(){
             var newCrust = $("input[type=radio][name=crustl]:checked").val();
             var newTopping = $("input[type=radio][name=toppingl]:checked").val();
         }
+        else{
+            alert('select size')
+        }
+
+        $('#checkout').text(newSize + ", " + newQuantity +", " + newCrust + ", " + newTopping)
+        $('.details').show();
     })
 
 });
