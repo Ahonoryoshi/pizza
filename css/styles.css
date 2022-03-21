@@ -15,3 +15,9 @@ label{
     color: rgb(112, 207, 68);
     font-size: xx-large;
 }
+.clickable{
+    cursor: pointer;
+}
+.clickable:hover{
+    text-decoration: underline;
+}

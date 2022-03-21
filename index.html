@@ -127,16 +127,25 @@
             <br><br><br><br>
             <div class="row">
                 <div class="container">
-                    <p>DELIVERY OPTIONS</p>
+                    <h2>DELIVERY OPTIONS</h2>
                     <div class="form-group">
-                        <label for="deliver">DELIVER</label>
-                        <input type="radio" name="deliver" class="deliver" value="deliver">
-                        <input type="text">
+                        <label for="delivery">DELIVERED TO MY LOCATION: <span class="price">KSh 200</span></label>
+                        <input type="radio" name="delivery" class="delivery" value="deliver">
+                        <br>
+                        <p class="clickable">CLICK ENTER YOUR LOCATION</p>
+                        <label for="town">Town</label>
+                        <input type="text" class="form-control">
+                        <br>
+                        <label for="street">STREET</label>
+                        <input type="text" class="form-control" name="street" id="street">
+                        <br>
+                        <label for="house-number">House Number</label>
+                        <input type="text" class="form-control" name="house-number" id="house-number">
                     </div>
-                    <br><br>
+                    <br><br><br>
                     <div class="form-group">
-                        <label for="deliver">PICKUP</label>
-                        <input type="radio" name="deliver" class="deliver" value="pickup">
+                        <label for="delivery" class="delivery">PICKUP AT STORE<span class="price">free!! pickup</span></label>
+                        <input type="radio" name="delivery" class="delivery" value="pickup">
                     </div>
                 </div>
             </div>
