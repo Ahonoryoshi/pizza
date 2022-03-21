@@ -24,3 +24,10 @@ label{
 .location{
     display: none;
 }
+.delivery{
+    color: blueviolet;
+}
+#charge{
+    color: brown;
+    text-decoration: solid;
+}
