@@ -21,3 +21,6 @@ label{
 .clickable:hover{
     text-decoration: underline;
 }
+.location{
+    display: none;
+}
