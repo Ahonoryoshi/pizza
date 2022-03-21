@@ -22,16 +22,44 @@ $(document).ready(function(){
         $("#small-pizza").show();
         $("#medium-pizza").hide();
         $("#large-pizza").hide();
+        $("#qs").attr("required", "true");
+        $("#crusts").attr("required", "true");
+        $("#toppings").attr("required", "true");
+        $("#qm").removeAttr('required');
+        $("#crustm").removeAttr('required');
+        $("#toppingm").removeAttr('required');
+        $("#ql").removeAttr('required');
+        $("#crustl").removeAttr('required');
+        $("#toppingl").removeAttr('required');
+
     });
     $("#medium").click(function(){
         $("#small-pizza").hide();
         $("#medium-pizza").show();
         $("#large-pizza").hide();
+        $("#qm").attr("required", "true");
+        $("#crustm").attr("required", "true");
+        $("#toppingm").attr("required", "true");
+        $("#qs").removeAttr('required');
+        $("#crusts").removeAttr('required');
+        $("#toppings").removeAttr('required');
+        $("#ql").removeAttr('required');
+        $("#crustl").removeAttr('required');
+        $("#toppingl").removeAttr('required');
     });
     $("#large").click(function(){
         $("#small-pizza").hide();
         $("#medium-pizza").hide();
         $("#large-pizza").show();
+        $("#ql").attr("required", "true");
+        $("#crustl").attr("required", "true");
+        $("#toppingl").attr("required", "true");
+        $("#qs").removeAttr('required');
+        $("#crusts").removeAttr('required');
+        $("#toppings").removeAttr('required');
+        $("#qm").removeAttr('required');
+        $("#crustm").removeAttr('required');
+        $("#toppingm").removeAttr('required');
     });
 
     $("#deliver").click(function(){
@@ -92,6 +120,7 @@ $(document).ready(function(){
 
         $('#checkout').text(newPizza.detaills())
         $('.details').show();
+        $('#submit').show();
 
 
 
