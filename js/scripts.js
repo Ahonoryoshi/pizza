@@ -92,6 +92,14 @@ $(document).ready(function(){
 
         $('#checkout').text(newPizza.detaills())
         $('.details').show();
+
+
+
+        $("#pizaa").submit(function(event){
+            event.preventDefault();
+            alert("Thank you for shopping with us." +
+            "You will make your payment on delivery or pickup")
+        })
     })
 
 });
