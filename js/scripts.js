@@ -15,19 +15,22 @@ $(document).ready(function(){
         $("#small-pizza").show();
         $("#medium-pizza").hide();
         $("#large-pizza").hide();
-    })
+    });
     $("#medium").click(function(){
         $("#small-pizza").hide();
         $("#medium-pizza").show();
         $("#large-pizza").hide();
-    })
+    });
     $("#large").click(function(){
         $("#small-pizza").hide();
         $("#medium-pizza").hide();
         $("#large-pizza").show();
-    })
+    });
 
-    $("#charge").click(function(){
-        var newquantitySmall = $('#')
+    $("#deliver").click(function(){
+        $(".location").show();
+    })
+    $("#pickup").click(function(){
+        $(".location").hide();
     })
 })
