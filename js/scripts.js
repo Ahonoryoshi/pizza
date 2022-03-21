@@ -7,10 +7,11 @@ function Pizza(size,quantity,crust,topping){
 };
 
 
+
 //user-interface logic
 
 $(document).ready(function(){
     $("#charge").click(function(){
-
+        var newquantitySmall = $('#')
     })
 })

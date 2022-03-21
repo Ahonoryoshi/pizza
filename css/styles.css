@@ -31,3 +31,6 @@ label{
     color: brown;
     text-decoration: solid;
 }
+.pizza{
+    display: none;
+}
