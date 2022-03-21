@@ -11,10 +11,10 @@
     <script src="js/scripts.js"></script>
 </head>
 <body>
-    <h1>PIZZA</h1>
+    <h1>PIZZA pi</h1>
     <div class="container">
         <form action="" id="pizaa">
-            <div class="row">
+            <div class="row" id="row1">
                 <div class="col-md-4">
                     <label for="size"><h2>SMALL</h2></label>
                     <input type="radio" name="size" value="small" id="small">
@@ -146,7 +146,7 @@
                 </div>
             </div>
             <br><br><br><br>
-            <div class="row">
+            <div class="row" id="row2">
                 <h2>DELIVERY OPTIONS</h2>
                 <div class="col-md-6">
                     <div class="container">
@@ -155,7 +155,6 @@
                             <label for="delivery" class="delivery">DELIVERED TO MY LOCATION: <span class="price">KSh 200</span></label>
                             <input type="radio" name="delivery" class="delivery" value="200deliver" id="deliver">
                             <br>
-                            <p class="clickable">CLICK ENTER YOUR LOCATION</p>
                             <div class="location">
                                 <label for="town">Town</label>
                             <input type="text" class="form-control" id="town">
@@ -188,7 +187,7 @@
 
             </div>
             <br><br><br>
-            <div class="row">
+            <div class="row" id="row3">
                 <div class="col-md-6">
                     <button class="btn" id="charge"> CHECKOUT:CLICK TO VIEW CHARGES</button>
                     <div class="details">

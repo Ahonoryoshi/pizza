@@ -13,7 +13,7 @@ label{
 }
 #submit{
     color: rgb(112, 207, 68);
-    font-size: xx-large;
+    font-size: 300%;
     display: none;
 }
 .clickable{
@@ -26,10 +26,10 @@ label{
     display: none;
 }
 .delivery{
-    color: blueviolet;
+    color: rgb(49, 226, 43);
 }
 #charge{
-    color: brown;
+    color: rgb(229, 234, 240);
     text-decoration: solid;
 }
 .pizza{
@@ -40,11 +40,33 @@ label{
 }
 #pickalert{
     display: none;
-    color: crimson;
+    color: rgb(189, 231, 228);
 }
 #deliveralert{
     display:none ;
 }
 #address{
-    color: crimson;
+    color: rgb(152, 221, 194);
+}
+#row1{
+    background-image: url(/img/pizza2.avif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+#row2{
+    background-image: url(/img/pizza3.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+.price{
+    color: aqua;
+}
+#row3{
+    font-size: x-large;
+    background-image: url(/img/pizza4.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
 }

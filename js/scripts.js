@@ -111,9 +111,11 @@ $(document).ready(function(){
         if(deliverPrice===200){
             $("#address").text(town + ' town, ' + street + ' street, house number ' + houseNumber);
             $("#deliveralert").show();
+            $("#pickalert").hide();
         }
         else{
             $("#pickalert").show();
+            $("#deliveralert").hide();
         }
 
 
