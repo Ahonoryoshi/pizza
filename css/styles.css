@@ -4,3 +4,10 @@ h1{
 .container{
     text-align: center;
 }
+label{
+    font-size: x-large;
+}
+.price{
+    font-style: italic;
+    color: brown;
+}
