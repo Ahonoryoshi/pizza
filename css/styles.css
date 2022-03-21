@@ -49,13 +49,13 @@ label{
     color: rgb(152, 221, 194);
 }
 #row1{
-    background-image: url(/img/pizza2.avif);
+    background-image: url(pizza2.avif);
     background-size: 100%;
     background-repeat: no-repeat;
     color: white;
 }
 #row2{
-    background-image: url(/img/pizza3.avif);
+    background-image: url(pizza3.avif);
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
@@ -65,7 +65,7 @@ label{
 }
 #row3{
     font-size: x-large;
-    background-image: url(/img/pizza4.avif);
+    background-image: url(pizza4.avif);
     background-repeat: no-repeat;
     background-size: 100%;
     color: white;
