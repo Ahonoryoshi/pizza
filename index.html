@@ -153,12 +153,12 @@
 
                         <div class="form-group">
                             <label for="delivery" class="delivery">DELIVERED TO MY LOCATION: <span class="price">KSh 200</span></label>
-                            <input type="radio" name="delivery" class="delivery" value="deliver" id="deliver">
+                            <input type="radio" name="delivery" class="delivery" value="200deliver" id="deliver">
                             <br>
                             <p class="clickable">CLICK ENTER YOUR LOCATION</p>
                             <div class="location">
                                 <label for="town">Town</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="town">
                             <br>
                             <label for="street">STREET</label>
                             <input type="text" class="form-control" name="street" id="street">
@@ -178,7 +178,7 @@
                         <br><br><br>
                         <div class="form-group">
                             <label for="delivery" class="delivery" >PICKUP AT STORE<span class="price">free!! pickup</span></label>
-                            <input type="radio" name="delivery" class="delivery" value="pickup" id="pickup">
+                            <input type="radio" name="delivery" class="delivery" value="000pickup" id="pickup">
                         </div>
                         <br><br><br>
 
@@ -193,6 +193,10 @@
                     <button class="btn" id="charge"> CHECKOUT:CLICK TO VIEW CHARGES</button>
                     <div class="details">
                         <p id="checkout"></p>
+                        <p id="pickalert">PICK UP YOUR pIZZA(s) AT NGONG LANE AVENUE BEFORE 6PM</p>
+                        <p id="deliveralert"> YOUR PIZZAS WILL BE DELIVERED TO YOUR PLACE,
+                            <span id="address"></span>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-6">

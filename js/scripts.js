@@ -1,15 +1,17 @@
 //business logic
-function Pizza(size,quantity,crust,topping){
+function Pizza(size,quantity,crust,topping,price){
     this.size = size;
     this.quantity = quantity;
     this.crust = crust;
     this.topping = topping;
+    this.price = price;
 };
 
 Pizza.prototype.detaills = function(){
     return 'You ordered ' +  this.quantity +" "+ this.size + " pizzas with " +
-    this.crust + " crust, and " + this.topping + " topping"
-}
+    this.crust + " crust, and " + this.topping +
+    " topping. This will cost ksh " + this.price
+};
 
 
 
@@ -49,29 +51,44 @@ $(document).ready(function(){
             var newCrust = $("input[type=radio][name=crusts]:checked").val().slice(3);
             var newTopping = $("input[type=radio][name=toppings]:checked").val().slice(3);
             var crustPrice = parseInt($("input[type=radio][name=crusts]:checked").val().slice(0,3));
-            var Toppingprice = parseInt($("input[type=radio][name=toppings]:checked").val().slice(0,3));
+            var toppingprice = parseInt($("input[type=radio][name=toppings]:checked").val().slice(0,3));
         }
         else if (newSize==="medium"){
             var newQuantity = parseInt($('#qm').val());
             var newCrust = $("input[type=radio][name=crustm]:checked").val().slice(3);
             var newTopping = $("input[type=radio][name=toppingm]:checked").val().slice(3);
             var crustPrice = parseInt($("input[type=radio][name=crustm]:checked").val().slice(0,3));
-            var Toppingprice = parseInt($("input[type=radio][name=toppingm]:checked").val().slice(0,3));
+            var toppingprice = parseInt($("input[type=radio][name=toppingm]:checked").val().slice(0,3));
         }
         else if (newSize==="large"){
             var newQuantity = parseInt($('#ql').val());
             var newCrust = $("input[type=radio][name=crustl]:checked").val().slice(3);
             var newTopping = $("input[type=radio][name=toppingl]:checked").val().slice(3);
             var crustPrice =parseInt($("input[type=radio][name=crustl]:checked").val().slice(0,3));
-            var Toppingprice = parseInt($("input[type=radio][name=toppingl]:checked").val().slice(0,3));
+            var toppingprice = parseInt($("input[type=radio][name=toppingl]:checked").val().slice(0,3));
         }
         else{
             alert('select size')
         }
 
-        var newPizza = new Pizza(newSize,newQuantity,newCrust,newTopping);
+        var deliverPrice = parseInt($("input[type=radio][name=delivery]:checked").val().slice(0,3));
 
-        var newPrice =
+        var newPrice = (crustPrice + toppingprice) * newQuantity + deliverPrice;
+        var newPizza = new Pizza(newSize,newQuantity,newCrust,newTopping,newPrice);
+
+        var town = $("#town").val();
+        var street = $("#street").val();
+        var houseNumber = $("#house-number").val();
+
+        if(deliverPrice===200){
+            $("#address").text(town + ' town, ' + street + ' street, house number ' + houseNumber);
+            $("#deliveralert").show();
+        }
+        else{
+            $("#pickalert").show();
+        }
+
+
 
         $('#checkout').text(newPizza.detaills())
         $('.details').show();

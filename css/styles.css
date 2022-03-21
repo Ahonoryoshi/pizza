@@ -37,3 +37,13 @@ label{
 .details{
     display: none;
 }
+#pickalert{
+    display: none;
+    color: crimson;
+}
+#deliveralert{
+    display:none ;
+}
+#address{
+    color: crimson;
+}
